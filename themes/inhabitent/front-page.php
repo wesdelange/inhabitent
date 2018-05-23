@@ -6,10 +6,56 @@
  */
 
 get_header(); ?>
-<i class="fab fa-accessible-icon"></i>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<!-- displays shop categories -->
+	<section class="shop-categories">	
+		<?php 
+			$terms = get_terms( array(
+				'taxonomy' => 'product_type',
+				'hide-empty' => false
+			));
+		?>
+		<?php 
+			foreach ( $terms as $term ) : ?>
+		<div class="shop-entry-<?php echo $term->name;?>">
+			<div class="icon-container">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/icons/<?php echo $term->slug;?>.svg">
+			</div>
+            <p><?php echo $term->description;?></p>
+            <button><?php echo strtoupper($term->slug);?> STUFF</button>
+            <?php endforeach;?>	
+		</div>	
+	</section>
+		
+		
+		<!-- displays posts -->
+		
+	<section class="latest-entry">
+		<?php
+		$args = array( 
+			'post_type' => 'post', 
+			'posts_per_page' => 3,
+		);
+		$product_posts = get_posts( $args ); 
+		?>
+		<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+		<div class="journal-entry">
+			<?php the_post_thumbnail( 'thumbnail' ) ?>
+			<div>
+				<?php the_date() ?> / <?php comments_number() ?>
+			</div>
+			<h3><?php the_title() ?></h3>
+			<button>
+				<a href="<?php the_permalink();?>"> Read Entry </a>
+			</button>
+		</div>	
+		<?php endforeach; wp_reset_postdata(); ?>
+	</section>
+
+		
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>

@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -17,13 +17,23 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+				<?php $terms = get_terms(array(
+					'taxonomy' => 'product_type',
+					'hide_empty' => false
+				));
+				?>
+
+				<?php foreach( $terms as $term ) : ?>
+				<!-- markup here -->
+				<h1><?php echo $term->name; ?></h1>
+				<?php endforeach; ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content', 'product' );
 				?>
 
 			<?php endwhile; ?>

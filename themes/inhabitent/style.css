@@ -344,6 +344,13 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+footer {
+  background-image: url(../../images/dark-wood.png);
+  height: 400px; }
+
+.journal-entry h3 {
+  margin: 0%; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/

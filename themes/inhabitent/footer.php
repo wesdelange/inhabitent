@@ -10,7 +10,8 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
+			<img src ="images/inhabitent-logo-text-dark.svg" alt ="logo">	
+			<div class="site-info">
 					<p>Copywright</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

@@ -59,3 +59,35 @@ function inhabitent_login_logo() {
 		return $mimes;
 	   }
 	   add_filter('upload_mimes', 'cc_mime_types');
+
+/**
+ * make hero image customizable
+ */
+
+ // check if on the about page
+
+function get_hero_image(){
+		if ( ! is_page_template( 'page-templates/about.php' )){
+			return;
+		}
+		$image = CFS()->get( 'header_image' );
+		
+		if ( ! $image ){
+			return;
+		}
+
+		$hero_css = ".page-template-about .entry-header {
+			background-size: cover, cover;
+			background-image: url( '{$image}' );
+		}";
+		wp_add_inline_style( 'inhabitent-style', $hero_css );
+}
+add_action( 'wp_enqueue_scripts', 'get_hero_image' );
+
+ // get image url from custom field suite
+
+
+ // add custom css, that uses that image url for a background image
+
+
+ // call this above function
