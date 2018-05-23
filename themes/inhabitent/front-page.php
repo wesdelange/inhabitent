@@ -10,6 +10,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+	<section class="hero">
+		<div class="hero-image">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg">
+		</div>
+	</section>
+		
+		
+		
 		<!-- displays shop categories -->
 	<section class="shop-categories">	
 		<?php 
@@ -20,6 +28,7 @@ get_header(); ?>
 		?>
 		<?php 
 			foreach ( $terms as $term ) : ?>
+		<div class="shop-entry-container">
 		<div class="shop-entry-<?php echo $term->name;?>">
 			<div class="icon-container">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/icons/<?php echo $term->slug;?>.svg">
@@ -27,6 +36,7 @@ get_header(); ?>
             <p><?php echo $term->description;?></p>
             <button><?php echo strtoupper($term->slug);?> STUFF</button>
             <?php endforeach;?>	
+		</div>
 		</div>	
 	</section>
 		

@@ -225,6 +225,11 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+body {
+  font-family: "Merriweather"; }
+  body h1, body h2, body h3 {
+    font-family: "Novovento Sans Web"; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -344,12 +349,92 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+  width: 100%;
+  background-image: url(../../images/home-hero.jpg);
+  background-size: cover, cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  text-transform: uppercase; }
+
 footer {
   background-image: url(../../images/dark-wood.png);
-  height: 400px; }
+  height: 400px;
+  color: white; }
+  footer h3 {
+    color: #d99054;
+    text-transform: uppercase; }
+  footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    footer .footer-container .footer-logo {
+      width: 30%; }
+      footer .footer-container .footer-logo img {
+        margin-top: 50px; }
+    footer .footer-container .contact-info {
+      width: 30%; }
+      footer .footer-container .contact-info .email:before {
+        font-family: FontAwesome;
+        content: "\f0e0";
+        padding-right: 0.5em; }
+      footer .footer-container .contact-info .phone:before {
+        font-family: FontAwesome;
+        content: "\f095";
+        padding-right: 0.5em; }
+      footer .footer-container .contact-info .facebook:before {
+        font-family: FontAwesome;
+        content: "\f082";
+        padding-right: 0.5em; }
+      footer .footer-container .contact-info .twitter:before {
+        font-family: FontAwesome;
+        content: "\f081";
+        padding-right: 0.5em; }
+      footer .footer-container .contact-info .google:before {
+        font-family: FontAwesome;
+        content: "\f0d4";
+        padding-right: 0.5em; }
+    footer .footer-container .business-hours {
+      width: 30%; }
 
 .journal-entry h3 {
   margin: 0%; }
+
+.icon-container img {
+  height: 100px; }
+
+.shop-categories {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.shop-entry-container {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Forms

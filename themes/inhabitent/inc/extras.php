@@ -32,7 +32,7 @@ add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 function inhabitent_login_logo() {
 	echo '<style type="text/css">
 	 .login h1 a {background-image: url('.get_bloginfo('template_directory').
-							'/images/inhabitent-logo-text-dark.svg) !important;
+							'/images/logos/inhabitent-logo-text-dark.svg) !important;
 			background-size: contain;
 			height: 55px;
 			width: 300px;			
@@ -78,6 +78,8 @@ function get_hero_image(){
 
 		$hero_css = ".page-template-about .entry-header {
 			background-size: cover, cover;
+			height: 700px;
+			width: 100%;
 			background-image: url( '{$image}' );
 		}";
 		wp_add_inline_style( 'inhabitent-style', $hero_css );
