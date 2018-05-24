@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -19,31 +19,34 @@ get_header(); ?>
 		
 		
 		<!-- displays shop categories -->
-	<section class="shop-categories">	
-		<?php 
-			$terms = get_terms( array(
-				'taxonomy' => 'product_type',
-				'hide-empty' => false
-			));
-		?>
-		<?php 
-			foreach ( $terms as $term ) : ?>
-		<div class="shop-entry-container">
-		<div class="shop-entry-<?php echo $term->name;?>">
-			<div class="icon-container">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/icons/<?php echo $term->slug;?>.svg">
-			</div>
-            <p><?php echo $term->description;?></p>
-            <button><?php echo strtoupper($term->slug);?> STUFF</button>
-            <?php endforeach;?>	
-		</div>
-		</div>	
-	</section>
+		<h1>shop stuff</h1>	
+		<section class="shop-entry-container">
+			<ul>
+				<?php 
+					$terms = get_terms( array(
+					'taxonomy' => 'product_type',
+					'hide-empty' => false
+					));
+					?>
+				<?php foreach ( $terms as $term ) : ?>
+				<li>	
+					<!--<?php echo $term->name;?>-->
+					<img src="<?php echo get_template_directory_uri(); ?>/images/icons/<?php echo $term->slug;?>.svg">
+					<p><?php echo $term->description;?></p>
+					<a href="<?php echo get_permalink(); ?>/product_type/<?php echo $term->slug;?>">
+						<button><?php echo strtoupper($term->slug);?> STUFF</button>
+					</a>
+				</li>
+				<?php endforeach;?>
+			</ul>	
+		</section>
+
 		
 		
 		<!-- displays posts -->
-		
-	<section class="latest-entry">
+	<h1>inhabitent journal</h1>	
+	<section class="latest-entry-container">
+		<ul>
 		<?php
 		$args = array( 
 			'post_type' => 'post', 
@@ -52,17 +55,22 @@ get_header(); ?>
 		$product_posts = get_posts( $args ); 
 		?>
 		<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-		<div class="journal-entry">
-			<?php the_post_thumbnail( 'thumbnail' ) ?>
+		<li>
 			<div>
+				<?php the_post_thumbnail( 'large' ) ?>
+			</div>	
+			<p>
 				<?php the_date() ?> / <?php comments_number() ?>
-			</div>
-			<h3><?php the_title() ?></h3>
+			</p>
+			<h2>
+				<?php the_title() ?>
+			</h2>
 			<button>
 				<a href="<?php the_permalink();?>"> Read Entry </a>
 			</button>
-		</div>	
+		</li>	
 		<?php endforeach; wp_reset_postdata(); ?>
+		</ul>
 	</section>
 
 		

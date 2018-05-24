@@ -388,21 +388,6 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-.hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 700px;
-  width: 100%;
-  background-image: url(../../images/home-hero.jpg);
-  background-size: cover, cover;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -798,3 +783,133 @@ object {
       color: #d99054; }
     .site-footer .container span {
       font-weight: bold; }
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+  width: 100%;
+  background-image: url(../../images/home-hero.jpg);
+  background-size: cover, cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+  margin: 2rem 0; }
+
+.shop-entry-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 300px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .shop-entry-container ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 200px;
+    padding: 0; }
+  .shop-entry-container li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    width: 23%; }
+    .shop-entry-container li img {
+      height: 80px; }
+    .shop-entry-container li p {
+      margin: 0px 10px; }
+    .shop-entry-container li button {
+      background: #248A83;
+      color: white;
+      border-color: inherit;
+      border: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      padding: 1rem 1rem;
+      font-family: "Novecento Sans Web", sans-serif;
+      font-weight: lighter; }
+
+.latest-entry-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 500px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .latest-entry-container ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 200px;
+    padding: 0; }
+    .latest-entry-container ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 32%;
+      border: 1px solid #e1e1e1; }
+      .latest-entry-container ul li div {
+        width: 100%; }
+      .latest-entry-container ul li p {
+        margin: 0; }
+      .latest-entry-container ul li h2 {
+        margin: 0 2rem; }
