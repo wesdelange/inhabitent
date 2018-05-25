@@ -62,17 +62,29 @@ get_header(); ?>
 			<p>
 				<?php the_date() ?> / <?php comments_number() ?>
 			</p>
-			<h2>
-				<?php the_title() ?>
-			</h2>
-			<button>
-				<a href="<?php the_permalink();?>"> Read Entry </a>
-			</button>
+			<a href="<?php the_permalink();?>"><h2><?php the_title() ?></h2></a>
+			<a href="<?php the_permalink();?>"><button> Read Entry </button></a>
 		</li>	
 		<?php endforeach; wp_reset_postdata(); ?>
 		</ul>
 	</section>
 
+		<!-- display adventure journal -->
+
+<h1>latest adventures</h1>
+<section class="adventure">
+	<div class="canoe"><h1>Getting back to Nature in a Canoe</h1><span>Read Entry</span></div>
+	<div class="container">
+		<div class="beach"><h1>A Night with Friends at the Beach</h1><span>Read Entry</span></div>
+		<div class="mountain"><h2>Taking in the view at Big Mountain</h2><span>Read Entry</span></div>
+		<div class="sky"><h2>Star-Gazing at the Night Sky</h2><span>Read Entry</span></div>
+	</div>
+</section>
+<span class="more-adventures">more adventures</span>
+		
+		
+		
+		
 		
 		<?php if ( have_posts() ) : ?>
 
