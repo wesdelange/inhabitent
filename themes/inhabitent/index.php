@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -19,12 +20,14 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
+			<div class="journal-entrys">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
+				<a href="<?php echo get_permalink(); ?>"><span>Read More -></span></a>
 
 			<?php endwhile; ?>
-
+			</div>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -37,4 +40,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+
+
 <?php get_footer(); ?>

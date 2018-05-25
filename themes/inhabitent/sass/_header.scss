@@ -1,0 +1,30 @@
+.main-navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    div {
+        ul{
+            margin-left: 800px;
+            margin-right: 200px;
+            
+            li {
+                margin-left: 20px;
+                font-family: $font__accent;
+                font-size: 1.5rem;
+                
+            }
+        }
+    }
+    img {
+        height: 30px;
+    }
+
+    a:link {
+        color: $color_green;
+        
+    }
+    a:visited {
+        color: $color_green;
+    }
+}

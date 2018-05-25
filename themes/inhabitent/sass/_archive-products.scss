@@ -1,0 +1,31 @@
+.page-header {
+    .taxonomy-description {
+      display: none;
+    }
+    .stuff-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 500px;
+        margin-right: 500px;
+        color: $color_green;
+    }
+    h1 {
+        color: black;
+    }
+}
+.shop-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .item-container {
+        width: 25%;
+    }
+    img {
+        //height: 200px;
+        //width: auto;
+    }
+}
+.entry-title {
+    display: none;
+}
