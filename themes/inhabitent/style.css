@@ -1119,15 +1119,42 @@ h1, h2 {
 .entry-title {
   display: none; }
 
-.entry-title {
+.about-container .entry-title {
   color: white;
   display: block;
   font-size: 3rem;
   font-weight: bold; }
 
-.entry-content {
+.about-container .entry-content {
   margin: 0 300px; }
-  .entry-content h2 {
+  .about-container .entry-content h2 {
     color: #2f1339;
     font-size: 2rem;
     font-weight: bold; }
+
+.find-us-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%; }
+  .find-us-wrapper .find-us-container {
+    text-align: left;
+    width: 70%; }
+    .find-us-wrapper .find-us-container .entry-title {
+      color: black;
+      display: block;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 20px; }
+    .find-us-wrapper .find-us-container .entry-content {
+      margin-left: 20px; }
+      .find-us-wrapper .find-us-container .entry-content h2 {
+        color: #2f1339;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: left; }
