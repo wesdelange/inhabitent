@@ -1,6 +1,10 @@
 .page-header {
     .taxonomy-description {
-      display: none;
+      display: flex;
+      p{
+        width: 100%;  
+        text-align: center;
+      }
     }
     .stuff-container {
         display: flex;
@@ -27,5 +31,8 @@
     }
 }
 .entry-title {
-    display: none;
+    display: flex;
 }
+
+//------------------single product page------------------//
+

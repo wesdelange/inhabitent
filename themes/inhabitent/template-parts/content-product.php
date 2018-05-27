@@ -13,15 +13,16 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+		
 
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
         <!--custom field suite -->
-        <p><?php echo CFS()->get( 'price' ); ?></p>
+		<p><?php echo CFS()->get( 'price' ); ?></p>
 	</div><!-- .entry-content -->
 
 	<!--<footer class="entry-footer">-->

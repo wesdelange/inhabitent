@@ -16,13 +16,11 @@
 
 .widget-area {
 	width: 30%;
-}
-.journal-entrys {
-	width: 70%;
-}
-.entry-content {
-	display: flex;
-	flex-direction: column;
+	.widget-title {
+		span {
+			font-weight: bold;
+		}
+	}
 }
 
 

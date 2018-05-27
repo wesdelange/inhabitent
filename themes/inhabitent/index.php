@@ -20,12 +20,13 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
+			<div class="journal-container">
 			<div class="journal-entrys">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
-				<a href="<?php echo get_permalink(); ?>"><span>Read More -></span></a>
-
+				
+				
 			<?php endwhile; ?>
 			</div>
 			<?php the_posts_navigation(); ?>
@@ -35,11 +36,12 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
-		</main><!-- #main -->
+		<?php get_sidebar(); ?>
+		</div>
+	</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 
 
 <?php get_footer(); ?>

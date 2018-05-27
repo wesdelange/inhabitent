@@ -26,7 +26,7 @@ get_header(); ?>
 				<div class="stuff-container">
 				<?php foreach( $terms as $term ) : ?>
 				<!-- markup here -->
-					<h3><?php echo $term->name; ?></h3>
+					<h3><a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></h3>
 				<?php endforeach; ?>
 				</div>
 			</header><!-- .page-header -->
