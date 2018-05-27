@@ -2,30 +2,26 @@
 /**
  * Template part for displaying single products.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
 
-		
-
-	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-        <!--custom field suite -->
-		<p><?php echo CFS()->get( 'price' ); ?></p>
+		
+		
+			<?php if ( has_post_thumbnail() ) : ?>
+				<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+			<?php endif; ?>
+		
+		
+		<div>
+			<?php the_title( '<h2 class="entry-title"></h2>' ); ?><?php echo ( '............' );?><span><?php echo CFS()->get( 'price' ); ?><!--custom field suite --></span>
+		</div>
+	
 	</div><!-- .entry-content -->
 
-	<!--<footer class="entry-footer">-->
-<!--social media links-->
-	<!--</footer>-->
 </article><!-- #post-## -->

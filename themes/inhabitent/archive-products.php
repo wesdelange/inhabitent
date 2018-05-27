@@ -13,37 +13,45 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<!--<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>-->
+				
+				<h1>shop stuff</h1>
+				
+				<div class="term-list">
+				
 				<?php $terms = get_terms(array(
 					'taxonomy' => 'product_type',
 					'hide_empty' => false
 				));
 				?>
-				<h1>shop stuff</h1>
-				<div class="stuff-container">
-				<?php foreach( $terms as $term ) : ?>
-				<!-- markup here -->
-					<h3><a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></h3>
-				<?php endforeach; ?>
-				</div>
+					
+					<?php foreach( $terms as $term ) : ?>
+				
+						<p><a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></p>
+					
+					<?php endforeach; ?>
+				
+				</div><!--stuff-container-->
+			
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+			
+			
 			<div class="shop-container">
+			
+			
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="item-container">
-				<a href="<?php the_permalink();?>">
-				<?php
-					get_template_part( 'template-parts/content', 'product' );
-				?></a>
-				<p><?php the_title(); ?></p>
-				</div>
+				
+				
+			<div class="item-container">
+	
+					<?php get_template_part( 'template-parts/content', 'product' ); ?>
+					
+			</div>
 
 			<?php endwhile; ?>
-			</div>
+			
+			</div><!-- shop-container -->
 			
 		<?php else : ?>
 
@@ -55,3 +63,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+				<!--<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>-->
