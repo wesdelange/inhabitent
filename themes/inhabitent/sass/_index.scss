@@ -34,7 +34,7 @@
                     background-color: $color_green;
                     color: white;
                     width: 60%;
-                    margin-top: -225px;
+                    margin-top: -232px;
                     margin-left: 250px;
                 }
             }
@@ -46,6 +46,16 @@
                 width: 60%;
                 margin-bottom: -100px;
                 z-index: 99;
+                a:link {
+                    text-decoration: none;
+                    color: white;
+                }
+                a:visited {
+                    color: white;
+                }
+                a:hover {
+                    color: darken($color: white, $amount: 10%);
+                }
             }
         }
     }

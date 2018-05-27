@@ -1197,7 +1197,7 @@ h1, h2 {
         background-color: #248A83;
         color: white;
         width: 60%;
-        margin-top: -225px;
+        margin-top: -232px;
         margin-left: 250px; }
       .journal-container .journal-entrys .entry-content h2 {
         background-color: #248A83;
@@ -1206,3 +1206,54 @@ h1, h2 {
         width: 60%;
         margin-bottom: -100px;
         z-index: 99; }
+        .journal-container .journal-entrys .entry-content h2 a:link {
+          text-decoration: none;
+          color: white; }
+        .journal-container .journal-entrys .entry-content h2 a:visited {
+          color: white; }
+        .journal-container .journal-entrys .entry-content h2 a:hover {
+          color: #e6e6e6; }
+
+.single-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .single-container .single-post {
+    width: 70%; }
+    .single-container .single-post .entry-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 60%;
+      margin-left: 200px; }
+      .single-container .single-post .entry-content h2 {
+        background-color: #248A83;
+        color: white;
+        text-align: left;
+        width: 60%;
+        margin-bottom: -100px;
+        z-index: 99; }
+      .single-container .single-post .entry-content .entry-meta p {
+        background-color: #248A83;
+        color: white;
+        width: 60%;
+        margin-top: -25px;
+        margin-left: 250px; }
+      .single-container .single-post .entry-content .entry-meta a:link {
+        text-decoration: none;
+        color: white; }
+      .single-container .single-post .entry-content .entry-meta a:visited {
+        color: white; }
+  .single-container .comment-box {
+    width: 70%; }

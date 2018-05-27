@@ -19,11 +19,12 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<h2><?php the_title(); ?></h2>
+	<h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
 		
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
+
 		<div class="excerpt"><?php the_excerpt(); ?></div>
 		<div class="entry-meta">
 			<p><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?></p>
