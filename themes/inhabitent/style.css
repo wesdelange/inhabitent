@@ -759,10 +759,10 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.content-area {
+.archive .content-area, .blog .content-area, .single .content-area {
   max-width: 1120px;
   margin: auto; }
-  .content-area .entry-content {
+  .archive .content-area .entry-content, .blog .content-area .entry-content, .single .content-area .entry-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -770,14 +770,14 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .content-area .entry-content p {
+    .archive .content-area .entry-content p, .blog .content-area .entry-content p, .single .content-area .entry-content p {
       width: 90%; }
-      .content-area .entry-content p span {
+      .archive .content-area .entry-content p span, .blog .content-area .entry-content p span, .single .content-area .entry-content p span {
         line-height: 1.5; }
-    .content-area .entry-content img {
+    .archive .content-area .entry-content img, .blog .content-area .entry-content img, .single .content-area .entry-content img {
       width: 90%;
       margin-top: -50px; }
-    .content-area .entry-content .entry-meta {
+    .archive .content-area .entry-content .entry-meta, .blog .content-area .entry-content .entry-meta, .single .content-area .entry-content .entry-meta {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -790,17 +790,17 @@ object {
               justify-content: flex-end;
       width: 90%;
       margin-top: -40px; }
-      .content-area .entry-content .entry-meta p {
+      .archive .content-area .entry-content .entry-meta p, .blog .content-area .entry-content .entry-meta p, .single .content-area .entry-content .entry-meta p {
         background-color: #248A83;
         color: white;
         width: 50%;
         text-align: right; }
-      .content-area .entry-content .entry-meta a:link {
+      .archive .content-area .entry-content .entry-meta a:link, .blog .content-area .entry-content .entry-meta a:link, .single .content-area .entry-content .entry-meta a:link {
         text-decoration: none;
         color: white; }
-      .content-area .entry-content .entry-meta a:visited {
+      .archive .content-area .entry-content .entry-meta a:visited, .blog .content-area .entry-content .entry-meta a:visited, .single .content-area .entry-content .entry-meta a:visited {
         color: white; }
-    .content-area .entry-content h2 {
+    .archive .content-area .entry-content h2, .blog .content-area .entry-content h2, .single .content-area .entry-content h2 {
       background-color: #248A83;
       color: white;
       text-align: left;
@@ -810,10 +810,10 @@ object {
       font-size: 2.2rem;
       padding: 10px 20px;
       font-weight: bold; }
-      .content-area .entry-content h2 a:link {
+      .archive .content-area .entry-content h2 a:link, .blog .content-area .entry-content h2 a:link, .single .content-area .entry-content h2 a:link {
         text-decoration: none;
         color: white; }
-      .content-area .entry-content h2 a:visited {
+      .archive .content-area .entry-content h2 a:visited, .blog .content-area .entry-content h2 a:visited, .single .content-area .entry-content h2 a:visited {
         color: white; }
 
 .site-footer {
@@ -861,6 +861,9 @@ object {
       color: #d99054; }
     .site-footer .container span {
       font-weight: bold; }
+
+.home .site-content {
+  max-width: 100%; }
 
 .hero {
   display: -webkit-box;
@@ -1247,22 +1250,24 @@ h1, h2 {
           margin-bottom: -40px;
           background-color: white; }
 
-.page-template-about .content-area {
+.page-template-about .site-content {
   max-width: 100%; }
-  .page-template-about .content-area .about-container {
+  .page-template-about .site-content .content-area {
+    max-width: 100%; }
+  .page-template-about .site-content .about-container {
     width: 100%; }
-    .page-template-about .content-area .about-container .entry-header {
+    .page-template-about .site-content .about-container .entry-header {
       height: 100vh;
       width: auto; }
-    .page-template-about .content-area .about-container .entry-title {
+    .page-template-about .site-content .about-container .entry-title {
       color: white;
       display: block;
       font-size: 3rem;
       font-weight: bold; }
-    .page-template-about .content-area .about-container .entry-content {
+    .page-template-about .site-content .about-container .entry-content {
       max-width: 900px;
       margin: auto; }
-      .page-template-about .content-area .about-container .entry-content h2 {
+      .page-template-about .site-content .about-container .entry-content h2 {
         width: 100%;
         color: #2f1339;
         font-size: 2rem;
@@ -1270,7 +1275,7 @@ h1, h2 {
         background: none;
         margin: 0;
         text-align: center; }
-      .page-template-about .content-area .about-container .entry-content p {
+      .page-template-about .site-content .about-container .entry-content p {
         width: 100%; }
 
 .site-content {

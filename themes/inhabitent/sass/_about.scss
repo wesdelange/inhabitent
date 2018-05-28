@@ -1,7 +1,10 @@
 
 .page-template-about {
-    .content-area {
+    .site-content {
         max-width: 100%;
+        .content-area {
+            max-width: 100%;
+        }
         .about-container {
             width: 100%;
             .entry-header {

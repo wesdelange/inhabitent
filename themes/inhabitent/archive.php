@@ -20,24 +20,29 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="journal-container">
+				<div class="journal-entrys">
+					<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+						<?php
+							get_template_part( 'template-parts/content' );
+						?>
 
-			<?php endwhile; ?>
+					<?php endwhile; ?>
+				</div>
+					<?php get_sidebar(); ?>
+					<?php the_posts_navigation(); ?>
 
-			<?php the_posts_navigation(); ?>
+				<?php else : ?>
 
-		<?php else : ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php endif; ?>
 
-		<?php endif; ?>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

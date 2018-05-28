@@ -1,60 +1,62 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
-.content-area {
-    max-width: $fixed__width;
-    margin: auto;
-    .entry-content {
-        display: flex;
-        flex-direction: column;
-        p {
-            width: 90%;
-            span {
-                line-height: 1.5;
-            }
-        }
-        img {
-            width: 90%;
-            margin-top: -50px;
-        }
-        .entry-meta {
+.archive, .blog, .single {
+    .content-area {
+        max-width: $fixed__width;
+        margin: auto;
+        .entry-content {
             display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            width: 90%;
-            margin-top: -40px;
+            flex-direction: column;
             p {
+                width: 90%;
+                span {
+                    line-height: 1.5;
+                }
+            }
+            img {
+                width: 90%;
+                margin-top: -50px;
+            }
+            .entry-meta {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                width: 90%;
+                margin-top: -40px;
+                p {
+                    background-color: $color__green;
+                    color: white;
+                    width: 50%;
+                    text-align: right;
+                }
+                a:link {
+                    text-decoration: none;
+                    color: white;
+                }
+                a:visited {
+                    color: white;
+                }
+            }
+            h2 {
                 background-color: $color__green;
                 color: white;
-                width: 50%;
-                text-align: right;
-            }
-            a:link {
-                text-decoration: none;
-                color: white;
-            }
-            a:visited {
-                color: white;
-            }
-        }
-        h2 {
-            background-color: $color__green;
-            color: white;
-            text-align: left;
-            z-index: 99;
-            margin-bottom: -95px;
-            width: 65%;
-            font-size: 2.2rem;
-            padding: 10px 20px;
-            font-weight: bold;
-            a:link {
-                text-decoration: none;
-                color: white;
-            }
-            a:visited {
-                color: white;
+                text-align: left;
+                z-index: 99;
+                margin-bottom: -95px;
+                width: 65%;
+                font-size: 2.2rem;
+                padding: 10px 20px;
+                font-weight: bold;
+                a:link {
+                    text-decoration: none;
+                    color: white;
+                }
+                a:visited {
+                    color: white;
+                }
             }
         }
     }
 }
+
