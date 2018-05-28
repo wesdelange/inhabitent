@@ -1,17 +1,35 @@
 
-.about-container {
-    .entry-title {
-        color: white;
-        display: block;
-        font-size: 3rem;
-        font-weight: bold;
-    }
-    .entry-content {
-        margin: 0 300px;
-        h2 {
-            color: $color__purple;
-            font-size: 2rem;
-            font-weight: bold;
+.page-template-about {
+    .content-area {
+        max-width: 100%;
+        .about-container {
+            width: 100%;
+            .entry-header {
+                height: 100vh;
+                width: auto;
+            }
+            .entry-title {
+                color: white;
+                display: block;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            .entry-content {
+                max-width: 900px;
+                margin: auto;
+                h2 {
+                    width: 100%;
+                    color: $color__purple;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    background: none;
+                    margin: 0;
+                    text-align: center;
+                }
+                p {
+                    width: 100%;
+                }
+            }
         }
     }
 }
