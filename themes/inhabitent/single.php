@@ -9,23 +9,26 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<div class="single-container">
-			<div class="single-post">
+		<div class="journal-container">
+			<div class="journal-entrys">
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			
-			</div>
-			<?php get_sidebar(); ?>
-			<div class="comment-box">
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+				<div class="comment-box">
+					<?php
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
+					?>
 				</div>
+			</div>
+			
+			<?php get_sidebar(); ?>
+			
+			
+
 		<?php endwhile; // End of the loop. ?>
 
 

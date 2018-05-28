@@ -757,11 +757,13 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .content-area .entry-content p {
+      width: 90%; }
+      .content-area .entry-content p span {
+        line-height: 1.5; }
     .content-area .entry-content img {
       width: 90%;
       margin-top: -50px; }
-    .content-area .entry-content .excerpt {
-      width: 90%; }
     .content-area .entry-content .entry-meta {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1281,6 +1283,27 @@ h1, h2 {
   .journal-container .journal-entrys {
     width: 100%;
     border-right: 1px solid #a1a1a1; }
+    .journal-container .journal-entrys .comment-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .journal-container .journal-entrys .comment-box .comments-area {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .journal-container .journal-entrys .comment-box .comments-area .comments-title {
+          color: #2f1339;
+          text-align: left;
+          font-size: 2.5rem;
+          font-weight: bold; }
+        .journal-container .journal-entrys .comment-box .comments-area .comment-list {
+          margin: 0; }
+        .journal-container .journal-entrys .comment-box .comments-area .comment-respond h3 {
+          font-size: 2rem; }
     .journal-container .journal-entrys .read-more {
       width: 20%;
       background-color: white;
@@ -1298,22 +1321,36 @@ h1, h2 {
         color: black; }
       .journal-container .journal-entrys .read-more a:visited {
         color: black; }
-
-.single-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .single-container .single-post {
-    width: 70%; }
-  .single-container .comment-box {
-    width: 70%; }
+    .journal-container .journal-entrys .entry-footer span {
+      margin-right: 10px;
+      font-family: "Novecento Sans Web", sans-serif;
+      font-size: 1.2rem; }
+      .journal-container .journal-entrys .entry-footer span a {
+        color: #248A83;
+        text-decoration: none; }
+    .journal-container .journal-entrys .entry-footer .social-links {
+      margin: 20px 0px; }
+      .journal-container .journal-entrys .entry-footer .social-links button {
+        background-color: white;
+        border-color: black;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        font-family: "Novecento Sans Web", sans-serif;
+        font-weight: lighter;
+        font-size: 15px;
+        padding: 10px 20px;
+        margin: 0 1px; }
+        .journal-container .journal-entrys .entry-footer .social-links button:hover {
+          background: #248A83;
+          color: white;
+          border-color: inherit;
+          border: 0;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          font-family: "Novecento Sans Web", sans-serif;
+          font-weight: lighter;
+          margin-left: 5px; }
 
 .error-container {
   display: -webkit-box;
@@ -1364,24 +1401,3 @@ h1, h2 {
         font-size: 2.7rem;
         text-align: left;
         font-weight: bold; }
-    .single-product-container .description-container .entry-footer button {
-      background-color: white;
-      border-color: black;
-      border-radius: 0;
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      font-family: "Novecento Sans Web", sans-serif;
-      font-weight: lighter;
-      font-size: 15px;
-      padding: 10px 20px;
-      margin: 0 1px; }
-      .single-product-container .description-container .entry-footer button:hover {
-        background: #248A83;
-        color: white;
-        border-color: inherit;
-        border: 0;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        font-family: "Novecento Sans Web", sans-serif;
-        font-weight: lighter;
-        margin-left: 5px; }

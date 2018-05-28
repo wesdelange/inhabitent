@@ -29,7 +29,7 @@
 			<p><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?></p>
 		</div>
 		
-		<div class="excerpt"><?php the_excerpt(); ?></div>
+		<?php the_excerpt(); ?>
 
 		<button class="read-more"><a href="<?php echo get_permalink(); ?>">Read More -></a></button>
 	</div><!-- .entry-content -->

@@ -8,12 +8,15 @@
     .entry-content {
         display: flex;
         flex-direction: column;
+        p {
+            width: 90%;
+            span {
+                line-height: 1.5;
+            }
+        }
         img {
             width: 90%;
             margin-top: -50px;
-        }
-        .excerpt {
-            width: 90%;
         }
         .entry-meta {
             display: flex;

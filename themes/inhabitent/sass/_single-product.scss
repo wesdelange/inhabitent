@@ -29,28 +29,5 @@
                 font-weight: bold;
             }
         }
-        .entry-footer {
-            button {
-                background-color: white;
-                border-color: black;
-                border-radius: 0;
-                box-shadow: none;
-                font-family: $font__accent;
-                font-weight: lighter;
-                font-size: 15px;
-                padding: 10px 20px;
-                margin: 0 1px;
-                &:hover {
-                    background: $color__green;
-                    color: white;
-                    border-color: inherit;
-                    border: 0;
-                    box-shadow: none;
-                    font-family: $font__accent;
-                    font-weight: lighter;
-                    margin-left: 5px;
-                }
-            }
-        }
     }
 }

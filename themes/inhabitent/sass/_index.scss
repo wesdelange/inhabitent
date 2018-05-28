@@ -5,17 +5,38 @@
     .journal-entrys {
         width: 100%;
         border-right: 1px solid $color__light-grey;
-            .read-more {
-                width: 20%;
-                background-color: white;
-                border-color: black;
-                border-radius: 0;
-                box-shadow: none;
-                font-family: $font__accent;
-                font-weight: lighter;
-                font-size: 15px;
-                padding: 10px 20px;
-                margin: 0 1px;
+        .comment-box {
+            display: flex;
+            .comments-area {
+                display: flex;
+                flex-direction: column;
+                .comments-title {
+                    color: $color__purple;
+                    text-align: left;
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                }
+                .comment-list {
+                    margin: 0;
+                }
+                .comment-respond {
+                    h3 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        .read-more {
+            width: 20%;
+            background-color: white;
+            border-color: black;
+            border-radius: 0;
+            box-shadow: none;
+            font-family: $font__accent;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 10px 20px;
+            margin: 0 1px;
 
             a:link {
                 text-decoration: none;
@@ -23,6 +44,41 @@
             }
             a:visited {
                     color: black;
+            }
+        }
+        .entry-footer {
+            span {
+                margin-right: 10px;
+                font-family: $font__accent;
+                font-size: 1.2rem;
+                a {
+                    color: $color__green;
+                    text-decoration: none;
+                }
+            }
+            .social-links {
+                margin: 20px 0px;
+                button {
+                    background-color: white;
+                    border-color: black;
+                    border-radius: 0;
+                    box-shadow: none;
+                    font-family: $font__accent;
+                    font-weight: lighter;
+                    font-size: 15px;
+                    padding: 10px 20px;
+                    margin: 0 1px;
+                    &:hover {
+                        background: $color__green;
+                        color: white;
+                        border-color: inherit;
+                        border: 0;
+                        box-shadow: none;
+                        font-family: $font__accent;
+                        font-weight: lighter;
+                        margin-left: 5px;
+                    }
+                }
             }
         }
     }

@@ -20,15 +20,20 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
-			<div class="journal-container">
+			
+		<div class="journal-container">
+			
 			<div class="journal-entrys">
-			<?php while ( have_posts() ) : the_post(); ?>
+				
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
-				
-				
-			<?php endwhile; ?>
-			</div>
+					<?php get_template_part( 'template-parts/content' ); ?>
+					
+					
+				<?php endwhile; ?>
+			
+			</div><!-- journal-entrys -->
+			
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -37,7 +42,9 @@ get_header(); ?>
 
 		<?php endif; ?>
 		<?php get_sidebar(); ?>
-		</div>
+		
+		</div><!-- journal-container -->
+	
 	</main><!-- #main -->
 	</div><!-- #primary -->
 
