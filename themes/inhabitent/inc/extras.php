@@ -86,10 +86,15 @@ function get_hero_image(){
 }
 add_action( 'wp_enqueue_scripts', 'get_hero_image' );
 
- // get image url from custom field suite
-
-
- // add custom css, that uses that image url for a background image
-
-
- // call this above function
+/**
+ * Filter the Product post type archive.
+ */
+ // create function that only gets 16 posts only when it is the product archive page
+ function inhabitent_display_shop_products( $query ) {
+    if ( is_post_type_archive( 'products' )) {
+		$query->set( 'posts_per_page', 16 );
+		return;
+    }
+ }
+ //then call above functions with action pre_get_posts
+ add_action( 'pre_get_posts', 'inhabitent_display_shop_products' );
