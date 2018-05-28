@@ -5,13 +5,19 @@
     .menu-container {
         max-width: $fixed__width;
         margin: auto;
+        .menu-nav-container {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            width: 100%;
+            height: 33px;
+        }
         .main-navigation {
             display: flex;
             flex-direction: row;
             align-content: center;
             width: 100%;
             height: 33px;
-            
             img {
                 height: 33px;
             }
@@ -35,6 +41,12 @@
                         }
                     }
                 }
+            }
+            form {
+                    .fieldset {
+                        display: flex;
+                        flex-direction: row;
+                    }
             }
         }
     }

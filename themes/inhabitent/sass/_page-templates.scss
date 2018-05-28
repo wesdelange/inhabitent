@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.archive, .blog, .single {
+.archive, .blog, .single, {
     .content-area {
         max-width: $fixed__width;
         margin: auto;
@@ -59,4 +59,80 @@
         }
     }
 }
+
+
+.page-template-default, .error404, .search {
+    .site-content {
+        max-width: $fixed__width;
+        margin: auto;
+        .find-us-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            .find-us-container {
+                width: 100%;
+                margin: 40px auto;
+                border-right: 1px solid $color__light-grey;
+                h1 {
+                    margin: 0;
+                }
+                .page-content {
+                    h2 {
+                        text-align: left;
+                    }
+                    ul {
+                        list-style-type: none;
+                        a {
+                            color: $color__green;
+                            text-decoration: none;
+                        }
+                        a:hover {
+                            color: $color__purple;
+                        }
+                    }
+                }
+                .entry-title {
+                    color: black;
+                    display: block;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    text-align: left;
+                    a {
+                        color: $color__green;
+                        text-decoration: none;
+                    }
+                    a:visited {
+                        color: $color__green;
+                    }
+                }
+                .entry-content {
+                    h2 {
+                        color: $color__purple;
+                        font-size: 2rem;
+                        text-align: left;
+                        background: none;
+                        margin: 10px 0px;
+                        padding: 0;
+                        width: 100%;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                    form {
+                        color: $color__purple;
+                        font-family: $font__accent;
+                        font-size: 1.2rem;
+                        p {
+                            input {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 

@@ -8,16 +8,15 @@
  */
 
 get_header(); ?>
-
+<div class="find-us-wrapper">
+	<div class="find-us-container">
 	
 	<div id="primary" class="content-area">
-	<div class"error-container">
 		<main id="main" class="site-main" role="main">
 
-		>
+		
 			<section class="error-404 not-found">
 				
-				<div class"error">
 					<header class="page-header">
 						<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 					</header><!-- .page-header -->
@@ -52,16 +51,16 @@ get_header(); ?>
 						?>
 
 					</div><!-- .page-content -->
-					</div>
 
 				
 							
 			</section><!-- .error-404 -->
 			
-			</main><!-- #main -->			
-			<?php get_sidebar(); ?>
-			</div>	<!--container-->	
+			</main><!-- #main -->				
 
 	</div><!-- #primary -->
-
+	</div>
+	<?php get_sidebar(); ?>
+	</div>
+<?php get_footer(); ?>
 <?php get_footer(); ?>

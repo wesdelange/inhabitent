@@ -638,6 +638,11 @@ a {
           box-sizing: border-box;
   width: 30%;
   padding-left: 20px; }
+  .widget-area h2 {
+    text-align: left;
+    font-weight: bold; }
+  .widget-area span {
+    font-weight: bold; }
   .widget-area ul {
     list-style-type: none;
     margin: 0; }
@@ -648,11 +653,6 @@ a {
       color: black; }
     .widget-area ul a:visited {
       color: #248A83; }
-  .widget-area .widget-title {
-    text-align: left;
-    font-weight: bold; }
-    .widget-area .widget-title span {
-      font-weight: bold; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -815,6 +815,62 @@ object {
         color: white; }
       .archive .content-area .entry-content h2 a:visited, .blog .content-area .entry-content h2 a:visited, .single .content-area .entry-content h2 a:visited {
         color: white; }
+
+.page-template-default .site-content, .error404 .site-content, .search .site-content {
+  max-width: 1120px;
+  margin: auto; }
+  .page-template-default .site-content .find-us-wrapper, .error404 .site-content .find-us-wrapper, .search .site-content .find-us-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto; }
+    .page-template-default .site-content .find-us-wrapper .find-us-container, .error404 .site-content .find-us-wrapper .find-us-container, .search .site-content .find-us-wrapper .find-us-container {
+      width: 100%;
+      margin: 40px auto;
+      border-right: 1px solid #a1a1a1; }
+      .page-template-default .site-content .find-us-wrapper .find-us-container h1, .error404 .site-content .find-us-wrapper .find-us-container h1, .search .site-content .find-us-wrapper .find-us-container h1 {
+        margin: 0; }
+      .page-template-default .site-content .find-us-wrapper .find-us-container .page-content h2, .error404 .site-content .find-us-wrapper .find-us-container .page-content h2, .search .site-content .find-us-wrapper .find-us-container .page-content h2 {
+        text-align: left; }
+      .page-template-default .site-content .find-us-wrapper .find-us-container .page-content ul, .error404 .site-content .find-us-wrapper .find-us-container .page-content ul, .search .site-content .find-us-wrapper .find-us-container .page-content ul {
+        list-style-type: none; }
+        .page-template-default .site-content .find-us-wrapper .find-us-container .page-content ul a, .error404 .site-content .find-us-wrapper .find-us-container .page-content ul a, .search .site-content .find-us-wrapper .find-us-container .page-content ul a {
+          color: #248A83;
+          text-decoration: none; }
+        .page-template-default .site-content .find-us-wrapper .find-us-container .page-content ul a:hover, .error404 .site-content .find-us-wrapper .find-us-container .page-content ul a:hover, .search .site-content .find-us-wrapper .find-us-container .page-content ul a:hover {
+          color: #2f1339; }
+      .page-template-default .site-content .find-us-wrapper .find-us-container .entry-title, .error404 .site-content .find-us-wrapper .find-us-container .entry-title, .search .site-content .find-us-wrapper .find-us-container .entry-title {
+        color: black;
+        display: block;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: left; }
+        .page-template-default .site-content .find-us-wrapper .find-us-container .entry-title a, .error404 .site-content .find-us-wrapper .find-us-container .entry-title a, .search .site-content .find-us-wrapper .find-us-container .entry-title a {
+          color: #248A83;
+          text-decoration: none; }
+        .page-template-default .site-content .find-us-wrapper .find-us-container .entry-title a:visited, .error404 .site-content .find-us-wrapper .find-us-container .entry-title a:visited, .search .site-content .find-us-wrapper .find-us-container .entry-title a:visited {
+          color: #248A83; }
+      .page-template-default .site-content .find-us-wrapper .find-us-container .entry-content h2, .error404 .site-content .find-us-wrapper .find-us-container .entry-content h2, .search .site-content .find-us-wrapper .find-us-container .entry-content h2 {
+        color: #2f1339;
+        font-size: 2rem;
+        text-align: left;
+        background: none;
+        margin: 10px 0px;
+        padding: 0;
+        width: 100%; }
+      .page-template-default .site-content .find-us-wrapper .find-us-container .entry-content p, .error404 .site-content .find-us-wrapper .find-us-container .entry-content p, .search .site-content .find-us-wrapper .find-us-container .entry-content p {
+        margin: 0; }
+      .page-template-default .site-content .find-us-wrapper .find-us-container .entry-content form, .error404 .site-content .find-us-wrapper .find-us-container .entry-content form, .search .site-content .find-us-wrapper .find-us-container .entry-content form {
+        color: #2f1339;
+        font-family: "Novecento Sans Web", sans-serif;
+        font-size: 1.2rem; }
 
 .site-footer {
   height: 355px;
@@ -1128,6 +1184,18 @@ h1, h2 {
   .site-header .menu-container {
     max-width: 1120px;
     margin: auto; }
+    .site-header .menu-container .menu-nav-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      width: 100%;
+      height: 33px; }
     .site-header .menu-container .main-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1173,6 +1241,14 @@ h1, h2 {
             margin: 0 20px; }
             .site-header .menu-container .main-navigation .menu-menu-1-container .menu li a:visited {
               color: #248A83; }
+      .site-header .menu-container .main-navigation form .fieldset {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
 
 .page-header {
   -webkit-box-sizing: border-box;
@@ -1278,46 +1354,6 @@ h1, h2 {
       .page-template-about .site-content .about-container .entry-content p {
         width: 100%; }
 
-.site-content {
-  max-width: 1120px;
-  margin: auto; }
-  .site-content .find-us-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto; }
-    .site-content .find-us-wrapper .find-us-container {
-      width: 100%;
-      margin: auto;
-      border-right: 1px solid #a1a1a1; }
-      .site-content .find-us-wrapper .find-us-container .entry-title {
-        color: black;
-        display: block;
-        font-size: 3rem;
-        font-weight: bold;
-        text-align: left; }
-      .site-content .find-us-wrapper .find-us-container .entry-content h2 {
-        color: #2f1339;
-        font-size: 2rem;
-        text-align: left;
-        background: none;
-        margin: 10px 0px;
-        padding: 0;
-        width: 100%; }
-      .site-content .find-us-wrapper .find-us-container .entry-content p {
-        margin: 0; }
-      .site-content .find-us-wrapper .find-us-container .entry-content form {
-        color: #2f1339;
-        font-family: "Novecento Sans Web", sans-serif;
-        font-size: 1.2rem; }
-
 .journal-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1398,18 +1434,6 @@ h1, h2 {
           font-family: "Novecento Sans Web", sans-serif;
           font-weight: lighter;
           margin-left: 5px; }
-
-.error-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%; }
-  .error-container .error {
-    width: 70%; }
 
 .single-product-container {
   display: -webkit-box;
