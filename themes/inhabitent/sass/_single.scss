@@ -5,37 +5,6 @@
     flex-wrap: wrap;
     .single-post {
         width: 70%;
-        .entry-content {
-            display: flex;
-            flex-direction: column;
-            width: 60%;
-            margin-left: 200px;
-            h2 {
-                background-color: $color_green;
-                color: white;
-                text-align: left;
-                width: 60%;
-                margin-bottom: -100px;
-                z-index: 99;
-            }
-            .entry-meta {
-
-                p {
-                    background-color: $color_green;
-                    color: white;
-                    width: 60%;
-                    margin-top: -25px;
-                    margin-left: 250px;
-                }
-                a:link {
-                    text-decoration: none;
-                    color: white;
-                }
-                a:visited {
-                    color: white;
-                }
-            }
-        }
     }
     .comment-box {
         width: 70%;

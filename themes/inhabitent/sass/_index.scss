@@ -3,15 +3,7 @@
 	flex-direction: row;
     width: 100%;
     .journal-entrys {
-        width: 70%;
-        .entry-content {
-            display: flex;
-            flex-direction: column;
-            width: 60%;
-            margin-left: 200px;
-            .excerpt {
-                height: 200px;
-            }
+        width: 100%;
             .read-more {
                 background-color: transparent;
                 border-color: black;
@@ -20,46 +12,15 @@
                 box-shadow: none;
                 font-family: $font__accent;
                 font-weight: lighter;
-                a:link {
-                    text-decoration: none;
-                    color: black;
-                }
-                a:visited {
-                    color: black;
-                }
+            a:link {
+                text-decoration: none;
+                color: black;
             }
-            .entry-meta {
-
-                p {
-                    background-color: $color_green;
-                    color: white;
-                    width: 60%;
-                    margin-top: -232px;
-                    margin-left: 250px;
-                }
-            }
-
-            h2 {
-                background-color: $color_green;
-                color: white;
-                text-align: left;
-                width: 60%;
-                margin-bottom: -100px;
-                z-index: 99;
-                a:link {
-                    text-decoration: none;
-                    color: white;
-                }
-                a:visited {
-                    color: white;
-                }
-                a:hover {
-                    color: darken($color: white, $amount: 10%);
-                }
+            a:visited {
+                    color: black;
             }
         }
     }
 }
-
 
 

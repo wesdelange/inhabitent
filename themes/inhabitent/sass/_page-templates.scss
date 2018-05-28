@@ -2,4 +2,35 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+.content-area {
+    max-width: $fixed__width;
+    margin: auto;
+    .entry-content {
+        display: flex;
+        flex-direction: column;
+        .entry-meta {
+            p {
+                background-color: $color__green;
+                color: white;
+                width: 60%;
+                margin-top: -25px;
+                margin-left: 250px;
+            }
+            a:link {
+                text-decoration: none;
+                color: white;
+            }
+            a:visited {
+                color: white;
+            }
+        }
+        h2 {
+            background-color: $color__green;
+            color: white;
+            text-align: left;
+            z-index: 99;
+            margin-bottom: -20px;
+            width: 50%;
+        }
+    }
+}

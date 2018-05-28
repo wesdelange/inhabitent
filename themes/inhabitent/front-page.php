@@ -7,14 +7,12 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="front-page-content-area">
 		<main id="main" class="site-main" role="main">
 
-	<section class="hero">
-		<div class="hero-image">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg">
-		</div>
-	</section>
+			<div class="hero">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg">
+			</div>
 		
 		
 		

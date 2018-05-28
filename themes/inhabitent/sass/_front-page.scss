@@ -1,11 +1,16 @@
+
+
+.front-page-content-area {
+    margin-top: 10px;
+}
+
 .hero {
 	display: flex;
-	height: 700px;
-	width: 100%;
+	height: auto;
 	background-image: url(../../images/home-hero.jpg);
 	background-size: cover, cover;
 	align-items: center;
-	justify-content: center;
+    justify-content: center;
 }
 
 h1, h2 {
@@ -40,7 +45,7 @@ h1, h2 {
         width: 23%;
 
         &:hover {
-            border-color: $color_orange;
+            border-color: $color__orange;
         }
         img {
             height: 80px;
@@ -49,7 +54,7 @@ h1, h2 {
             margin: 0px 10px;
         }
         button {
-            background: $color_green;
+            background: $color__green;
             color: white;
             border-color: inherit;
             border: 0;
@@ -60,7 +65,7 @@ h1, h2 {
             font-weight: lighter;
 
             &:hover {
-                background: darken($color_green, 10%);
+                background: darken($color__green, 10%);
             }
         }
     }
@@ -97,10 +102,10 @@ h1, h2 {
             }
             h2 {
                 margin: 0 5px 10px;
-                color: $color_green;
+                color: $color__green;
 
                 &:hover {
-                    color: $color_purple;
+                    color: $color__purple;
                 }
             }
             button {
@@ -113,7 +118,7 @@ h1, h2 {
                 margin-left: 5px;
 
                 &:hover {
-                    background: $color_green;
+                    background: $color__green;
                     color: white;
                     border-color: inherit;
                     border: 0;
@@ -154,7 +159,7 @@ h1, h2 {
         font-weight: lighter;
 
         &:hover {
-            background: $color_green;
+            background: $color__green;
             color: white;
             border-color: inherit;
             border: 0;
@@ -211,7 +216,7 @@ h1, h2 {
 
 }
 .more-adventures {
-    background-color: $color_green;
+    background-color: $color__green;
     padding: 10px 20px;
     color: white;
     font-family: $font__accent;
@@ -220,6 +225,6 @@ h1, h2 {
     margin-left: 200px;
 
     &:hover {
-        background: darken($color_green, 10%);
+        background: darken($color__green, 10%);
     }
 }
