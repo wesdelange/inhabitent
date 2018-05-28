@@ -8,13 +8,24 @@
     .entry-content {
         display: flex;
         flex-direction: column;
+        img {
+            width: 90%;
+            margin-top: -50px;
+        }
+        .excerpt {
+            width: 90%;
+        }
         .entry-meta {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 90%;
+            margin-top: -40px;
             p {
                 background-color: $color__green;
                 color: white;
-                width: 60%;
-                margin-top: -25px;
-                margin-left: 250px;
+                width: 50%;
+                text-align: right;
             }
             a:link {
                 text-decoration: none;
@@ -29,8 +40,18 @@
             color: white;
             text-align: left;
             z-index: 99;
-            margin-bottom: -20px;
-            width: 50%;
+            margin-bottom: -95px;
+            width: 65%;
+            font-size: 2.2rem;
+            padding: 10px 20px;
+            font-weight: bold;
+            a:link {
+                text-decoration: none;
+                color: white;
+            }
+            a:visited {
+                color: white;
+            }
         }
     }
 }

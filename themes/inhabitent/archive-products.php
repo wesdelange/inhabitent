@@ -30,7 +30,6 @@ get_header(); ?>
 					
 					<?php endforeach; ?>
 				
-				</div><!--stuff-container-->
 			
 			</header><!-- .page-header -->
 
@@ -47,7 +46,7 @@ get_header(); ?>
 	
 					<?php get_template_part( 'template-parts/content', 'product' ); ?>
 					
-			</div>
+			</div><!-- item-container -->
 
 			<?php endwhile; ?>
 			

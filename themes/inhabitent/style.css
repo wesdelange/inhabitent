@@ -634,7 +634,10 @@ a {
 
 /*----------move!!----*/
 .widget-area {
-  width: 30%; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 30%;
+  padding-left: 20px; }
   .widget-area .widget-title span {
     font-weight: bold; }
 
@@ -754,24 +757,49 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .content-area .entry-content .entry-meta p {
-      background-color: #248A83;
-      color: white;
-      width: 60%;
-      margin-top: -25px;
-      margin-left: 250px; }
-    .content-area .entry-content .entry-meta a:link {
-      text-decoration: none;
-      color: white; }
-    .content-area .entry-content .entry-meta a:visited {
-      color: white; }
+    .content-area .entry-content img {
+      width: 90%;
+      margin-top: -50px; }
+    .content-area .entry-content .excerpt {
+      width: 90%; }
+    .content-area .entry-content .entry-meta {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 90%;
+      margin-top: -40px; }
+      .content-area .entry-content .entry-meta p {
+        background-color: #248A83;
+        color: white;
+        width: 50%;
+        text-align: right; }
+      .content-area .entry-content .entry-meta a:link {
+        text-decoration: none;
+        color: white; }
+      .content-area .entry-content .entry-meta a:visited {
+        color: white; }
     .content-area .entry-content h2 {
       background-color: #248A83;
       color: white;
       text-align: left;
       z-index: 99;
-      margin-bottom: -20px;
-      width: 50%; }
+      margin-bottom: -95px;
+      width: 65%;
+      font-size: 2.2rem;
+      padding: 10px 20px;
+      font-weight: bold; }
+      .content-area .entry-content h2 a:link {
+        text-decoration: none;
+        color: white; }
+      .content-area .entry-content h2 a:visited {
+        color: white; }
 
 .site-footer {
   height: 355px;
@@ -1129,12 +1157,18 @@ h1, h2 {
               color: #248A83; }
 
 .page-header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-bottom: 1px dashed #a1a1a1;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .page-header h1 {
     margin: 0;
     font-size: 3rem;
     font-weight: bold; }
+  .page-header p {
+    text-align: center; }
   .page-header .term-list {
     width: 40%;
     margin: auto;
@@ -1169,7 +1203,8 @@ h1, h2 {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 50px; }
   .shop-container .item-container {
     width: 23%;
     margin: auto 0; }
@@ -1191,7 +1226,8 @@ h1, h2 {
         width: 100%;
         text-align: center;
         border-top: 5px solid #e1e1e1;
-        font-size: 15px; }
+        font-size: 15px;
+        text-transform: capitalize; }
 
 .about-container .entry-title {
   color: white;
@@ -1243,16 +1279,20 @@ h1, h2 {
           flex-direction: row;
   width: 100%; }
   .journal-container .journal-entrys {
-    width: 100%; }
+    width: 100%;
+    border-right: 1px solid #a1a1a1; }
     .journal-container .journal-entrys .read-more {
-      background-color: transparent;
+      width: 20%;
+      background-color: white;
       border-color: black;
       border-radius: 0;
-      border-width: 5px;
       -webkit-box-shadow: none;
               box-shadow: none;
       font-family: "Novecento Sans Web", sans-serif;
-      font-weight: lighter; }
+      font-weight: lighter;
+      font-size: 15px;
+      padding: 10px 20px;
+      margin: 0 1px; }
       .journal-container .journal-entrys .read-more a:link {
         text-decoration: none;
         color: black; }
