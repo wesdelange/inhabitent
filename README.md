@@ -25,6 +25,10 @@ Project 5 - Inhabitent-Project Summary This project was designed using a custom 
 
 [![home-screenshot.png](https://s22.postimg.cc/vmfnhzz2p/home-screenshot.png)](https://postimg.cc/image/ngxljuatp/)
 
+## Shop Page
+
+[![2018-06-04-12-56-localhost.png](https://s22.postimg.cc/ulfessach/2018-06-04-12-56-localhost.png)](https://postimg.cc/image/64x8yb9lp/)
+
 ## Journal Page
 
 [![2018-06-04-12-56-localhost.png](https://s22.postimg.cc/ulfessach/2018-06-04-12-56-localhost.png)](https://postimg.cc/image/64x8yb9lp/)
