@@ -27,7 +27,7 @@ Our fourth project at RED Academy, a mock hipster camping supply website created
 
 ## Shop Page
 
-[![2018-06-04-12-56-localhost.png](https://s22.postimg.cc/ulfessach/2018-06-04-12-56-localhost.png)](https://postimg.cc/image/64x8yb9lp/)
+[![2018-06-04-12-59-localhost.png](https://s22.postimg.cc/jzvjgowa9/2018-06-04-12-59-localhost.png)](https://postimg.cc/image/90ac535v1/)
 
 ## Journal Page
 
