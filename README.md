@@ -1,6 +1,6 @@
-Our fourth project at RED Academy, a mock hipster camping supply website created with Wordpress.
+# Inhabitent Camping Supply
 
-Project 5 - Inhabitent-Project Summary This project was designed using a custom WordPress theme. It contains multiples custom features such as: a custom post type, custom taxonomy, custom widget, and last but not least a custom plugin. The about page was created using a custom page template that allows the client to change the hero image within the WordPress Content Management System(CMS).
+Our fourth project at RED Academy, a mock hipster camping supply website created with Wordpress.
 
 ## Technologies Used
 
